@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App | Manahil Awan</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Background Animation -->
+
+    <div class="background"></div>
+
+    <!-- Main Container -->
+
+    <div class="container">
+
+        <!-- ================= HEADER ================= -->
+
+        <header>
+
+            <div class="logo">
+
+                <i class="fa-solid fa-cloud-sun"></i>
+
+                <h2>Weather App</h2>
+
+            </div>
+
+            <button id="themeBtn">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+        </header>
+
+        <!-- ================= SEARCH ================= -->
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Search any city...">
+
+                <button id="searchBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ================= LOADING ================= -->
+
+        <div class="loading hidden">
+
+            <div class="loader"></div>
+
+            <p>Loading Weather...</p>
+
+        </div>
+
+        <!-- ================= ERROR ================= -->
+
+        <div class="error hidden">
+
+            <i class="fa-solid fa-circle-exclamation"></i>
+
+            <h3>City Not Found</h3>
+
+            <p>Please enter a valid city name.</p>
+
+        </div>
+
+        <!-- ================= WEATHER CARD ================= -->
+
+        <section class="weather-card">
+
+            <img
+                id="weatherIcon"
+                src=""
+                alt="Weather Icon">
+
+            <h1 id="temperature">
+
+                --°C
+
+            </h1>
+
+            <h3 id="description">
+
+                Weather Description
+
+            </h3>
+
+            <h2 id="city">
+
+                City Name
+
+            </h2>
+
+            <p id="country">
+
+                Country
+
+            </p>
+
+            <div class="date-time">
+
+                <span id="date">
+
+                    Date
+
+                </span>
+
+                <span id="time">
+
+                    Time
+
+                </span>
+
+            </div>
+
+        </section>
+
+        <!-- ================= WEATHER DETAILS ================= -->
+
+        <section class="details-grid">
+
+            <div class="card">
+
+                <i class="fa-solid fa-temperature-half"></i>
+
+                <h4>Feels Like</h4>
+
+                <p id="feelsLike">--°C</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-droplet"></i>
+
+                <h4>Humidity</h4>
+
+                <p id="humidity">--%</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-wind"></i>
+
+                <h4>Wind Speed</h4>
+
+                <p id="wind">-- km/h</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-gauge-high"></i>
+
+                <h4>Pressure</h4>
+
+                <p id="pressure">----</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-eye"></i>
+
+                <h4>Visibility</h4>
+
+                <p id="visibility">-- km</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-sun"></i>
+
+                <h4>UV Index</h4>
+
+                <p id="uv">--</p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
